@@ -24,6 +24,12 @@ class UserController extends Controller
     public function createUser(Request $request)
     {
 
+        // return response()->json([
+        //     'code'=> 200,
+        //     'msg' => 'User Created Successfully',
+        //     'data' => "aaaaa",
+        // ], 200);
+
       
         try{
             $validateUser = Validator::make($request->all(),
